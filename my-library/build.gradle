@@ -5,10 +5,10 @@ plugins {
 }
 
 android {
-    namespace 'com.example.my_library'
     compileSdk 33
 
     defaultConfig {
+        namespace 'com.example.my-library'
         minSdk 24
         targetSdk 33
 
@@ -32,7 +32,6 @@ android {
 }
 
 dependencies {
-
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
@@ -53,4 +52,13 @@ afterEvaluate {
             }
         }
     }
+}
+
+task androidSourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from android.sourceSets.main.java.srcDirs
+}
+
+artifacts {
+    archives androidSourcesJar
 }
