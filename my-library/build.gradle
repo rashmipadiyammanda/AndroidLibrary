@@ -50,8 +50,8 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.rashmipadiyammanda'
-                artifactId = 'TestForm'
-                version = '1.0'
+                artifactId = 'my-library'
+                version = '11'
             }
         }
     }
