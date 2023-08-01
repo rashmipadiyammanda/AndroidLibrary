@@ -2,7 +2,7 @@ package com.example.my_library.testForm
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.`my-library`.R
+import com.example.`mylibrary`.R
 
 class testForm : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

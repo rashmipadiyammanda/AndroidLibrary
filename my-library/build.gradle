@@ -8,7 +8,6 @@ android {
     compileSdk 33
 
     defaultConfig {
-        namespace 'com.example.my-library'
         minSdk 24
         targetSdk 33
 
@@ -31,7 +30,7 @@ android {
             jvmTarget = '17'
         }
     }
-
+    namespace 'com.example.mylibrary'
 }
 
 dependencies {
