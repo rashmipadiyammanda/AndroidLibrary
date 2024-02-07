@@ -33,4 +33,20 @@
     </ImageView>
 
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="hellooooo"
+        android:textColor="#ffff"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </TextView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
