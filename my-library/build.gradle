@@ -46,8 +46,6 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.release
-
                 groupId = 'com.github.rashmipadiyammanda'
                 artifactId = 'my-library'
                 version = '17'
@@ -55,4 +53,49 @@ afterEvaluate {
         }
     }
 }
+
+
+//publishing {
+//    publications {
+//        mavenJava(MavenPublication) {
+//            // Replace with your library's group ID, artifact ID, and version
+//            groupId = 'com.github.rashmipadiyammanda'
+//            artifactId = 'my-library'
+//            version = '17'
+//
+//            from components.java
+//
+//            // Optionally, you can customize the pom.xml
+//            pom {
+//                name = 'Library Name'
+//                description = 'A description of your library'
+//                url = 'https://github.com/your-github-repo'
+//                licenses {
+//                    license {
+//                        name = 'The Apache Software License, Version 2.0'
+//                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//                    }
+//                }
+//                developers {
+//                    developer {
+//                        id = 'developer-id'
+//                        name = 'Developer Name'
+//                        email = 'developer@example.com'
+//                    }
+//                }
+//                scm {
+//                    connection = 'scm:git:github.com/your-github-repo.git'
+//                    developerConnection = 'scm:git:ssh://github.com/your-github-repo.git'
+//                    url = 'https://github.com/your-github-repo'
+//                }
+//            }
+//        }
+//    }
+//
+//    // This is optional and only needed if you want to publish to your local Maven repository
+//    repositories {
+//        mavenLocal()
+//    }
+//}
+
 
